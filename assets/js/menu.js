@@ -82,8 +82,8 @@ window.HQ = {
           "Blog Articles"
         ],
         [
-          "webinars",
-          "Webinars"
+          "case-studies",
+          "Case Studies"
         ],
         [
           "events",

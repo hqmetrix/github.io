@@ -6,7 +6,7 @@
   function here(dir, file) { return path.slice(-(dir.length + file.length + 7)) === '/' + dir + '/' + file + '.html'; }
 
   var items = HQ.menu.map(function (g) {
-    var cur = g.items.some(function (i) { return here(g.dir, i[0]); });
+    var cur = path.indexOf('/' + g.dir + '/') >= 0;
     var links = g.items.map(function (i) {
       return '<a href="' + link(g.dir, i[0]) + '"' + (here(g.dir, i[0]) ? ' aria-current="page"' : '') + '>' + esc(i[1]) + '</a>';
     }).join('');
@@ -45,6 +45,30 @@
       document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('on'); });
       document.querySelectorAll('.pane').forEach(function (x) { x.classList.remove('on'); });
       t.classList.add('on'); document.getElementById(t.dataset.t).classList.add('on');
+    });
+  });
+
+  /* checklist: ticks are kept in this browser only */
+  var boxes = document.querySelectorAll('.chk input[type=checkbox]');
+  if (boxes.length) {
+    var KEY = 'hq-checklist-' + location.pathname, saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (err) {}
+    var upd = function () {
+      var n = 0; boxes.forEach(function (x) { if (x.checked) n++; });
+      var pr = document.querySelector('.chk-progress'); if (pr) pr.textContent = n + ' of ' + boxes.length + ' done';
+    };
+    boxes.forEach(function (x) {
+      if (saved[x.dataset.k]) x.checked = true;
+      x.addEventListener('change', function () { saved[x.dataset.k] = x.checked; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (err) {} upd(); });
+    });
+    upd();
+  }
+  /* copy buttons */
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var s = btn.nextElementSibling, say = function (m) { if (s) s.textContent = m; };
+      try { navigator.clipboard.writeText(btn.getAttribute('data-copy')).then(function () { say('Copied'); }, function () { say('Copy is not available here. Select the table text instead.'); }); }
+      catch (err) { say('Copy is not available here. Select the table text instead.'); }
     });
   });
 
