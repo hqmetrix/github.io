@@ -82,6 +82,10 @@ window.HQ = {
           "Blog Articles"
         ],
         [
+          "aco-news",
+          "ACO News"
+        ],
+        [
           "case-studies",
           "Case Studies"
         ],
