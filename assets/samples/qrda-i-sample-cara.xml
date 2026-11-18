@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic sample for demonstration. Simplified; not a conformant production document. -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <templateId root="2.16.840.1.113883.10.20.24.1.1" extension="2017-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.24.1.2" extension="2019-12-01"/>
+  <title>QRDA Category I Report (sample)</title>
+  <effectiveTime value="20261115"/>
+  <recordTarget><patientRole><id root="2.16.840.1.113883.19.5" extension="Q-2003"/>
+    <patient><name><given>Cara</given><family>Nolab</family></name>
+      <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+      <birthTime value="19550722"/></patient></patientRole></recordTarget>
+  <component><structuredBody>
+    <component><section><templateId root="2.16.840.1.113883.10.20.24.2.2"/><title>Measure Section</title>
+      <entry><organizer classCode="CLUSTER" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.24.3.98"/>
+        <reference typeCode="REFR"><externalDocument classCode="DOC" moodCode="EVN"><text>CMS122v14</text></externalDocument></reference></organizer></entry>
+      <entry><organizer classCode="CLUSTER" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.24.3.98"/>
+        <reference typeCode="REFR"><externalDocument classCode="DOC" moodCode="EVN"><text>CMS165v14</text></externalDocument></reference></organizer></entry>
+    </section></component>
+    <component><section><templateId root="2.16.840.1.113883.10.20.17.2.1"/><title>Reporting Parameters</title>
+      <entry><act classCode="ACT" moodCode="EVN"><templateId root="2.16.840.1.113883.10.20.17.3.8"/>
+        <effectiveTime><low value="20260101"/><high value="20261231"/></effectiveTime></act></entry>
+    </section></component>
+    <component><section><templateId root="2.16.840.1.113883.10.20.24.2.1"/><title>Patient Data</title>
+      <entry><encounter classCode="ENC" moodCode="EVN"><code code="99214" codeSystem="2.16.840.1.113883.6.12" displayName="Office visit, established patient"/>
+        <effectiveTime><low value="20260620"/><high value="20260620"/></effectiveTime></encounter></entry>
+      <entry><observation classCode="OBS" moodCode="EVN"><code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+        <effectiveTime><low value="20140101"/></effectiveTime>
+        <value xsi:type="CD" code="E11.9" codeSystem="2.16.840.1.113883.6.90" displayName="Type 2 diabetes mellitus without complications"/></observation></entry>
+      <entry><observation classCode="OBS" moodCode="EVN"><code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+        <effectiveTime><low value="20120101"/></effectiveTime>
+        <value xsi:type="CD" code="I10" codeSystem="2.16.840.1.113883.6.90" displayName="Essential (primary) hypertension"/></observation></entry>
+      <entry><organizer classCode="CLUSTER" moodCode="EVN"><effectiveTime value="20260620"/>
+        <component><observation classCode="OBS" moodCode="EVN"><code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic blood pressure"/>
+          <effectiveTime value="20260620"/><value xsi:type="PQ" value="146" unit="mm[Hg]"/></observation></component>
+        <component><observation classCode="OBS" moodCode="EVN"><code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diastolic blood pressure"/>
+          <effectiveTime value="20260620"/><value xsi:type="PQ" value="92" unit="mm[Hg]"/></observation></component>
+      </organizer></entry>
+    </section></component>
+  </structuredBody></component>
+</ClinicalDocument>

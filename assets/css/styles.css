@@ -169,3 +169,33 @@ table.dt .r{text-align:right}
 .prose h3{margin:1.4em 0 .4em;font-size:17px}
 .prose .steps{margin:14px 0}
 .prose table.dt td{font-size:12.5px}
+
+/* quality measure parser demos */
+.qm-warn{border:1px solid #e0b84a;background:#fff8e6;color:#5c4400;padding:12px 16px;font-size:13.5px;margin:0 0 20px}
+.qm-tool textarea{width:100%;min-height:300px;font:12px/1.5 "JetBrains Mono",monospace;border:1px solid var(--line);padding:12px;color:var(--ink);background:#fff;box-sizing:border-box;resize:vertical}
+.qm-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+.qm-bar .btn{cursor:pointer}
+.qm-drop{border:2px dashed var(--line);padding:28px;text-align:center;background:var(--alt);margin:14px 0}
+.qm-drop.over{border-color:var(--blue);background:#eef4ff}
+.qm-scroll{overflow-x:auto;margin:8px 0 14px}
+.qm-table{border-collapse:collapse;width:100%;font-size:13px}
+.qm-table th,.qm-table td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+.qm-table th{background:var(--alt);color:var(--navy)}
+.qm-table tr.pass td:nth-child(2){color:#146c2e;font-weight:700}
+.qm-table tr.fail td:nth-child(2){color:#a12a2a;font-weight:700}
+.qm-card{border:1px solid var(--line);border-left:5px solid var(--blue);padding:18px 20px;margin:22px 0;background:#fff}
+.qm-card.tone-ok{border-left-color:#1f9d55}.qm-card.tone-bad{border-left-color:#c0392b}.qm-card.tone-muted{border-left-color:#9aa4b5}
+.qm-card h4{margin:18px 0 4px;color:var(--navy);font-size:14px}
+.qm-card-head{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.qm-card-id{font-weight:700;color:var(--blue)}.qm-card-title{font-weight:700;color:var(--navy)}
+.qm-badge{font-size:12px;padding:3px 9px;background:var(--alt);color:var(--ink);margin-left:auto}
+.qm-badge.tone-ok{background:#e3f6ea;color:#146c2e}.qm-badge.tone-bad{background:#fbe7e4;color:#a12a2a}
+.qm-rule{font-size:13px;color:var(--mut);margin:4px 0}
+.qm-note{font-size:13.5px;margin:6px 0}
+.qm-result{display:flex;gap:24px;font-weight:700;color:var(--navy);margin-top:14px;font-size:14px}
+.qm-patient h3{margin:24px 0 4px}
+.qm-meta{font-size:12.5px;color:var(--mut);margin:2px 0}
+.qm-facts{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;margin-top:6px}
+.qm-error{border:1px solid #c0392b;background:#fbe7e4;color:#7a1f16;padding:12px 16px;margin:14px 0;font-size:14px}
+.qm-details{margin:12px 0;border:1px solid var(--line);padding:10px 16px}
+.qm-details summary{cursor:pointer;font-weight:700;color:var(--navy)}

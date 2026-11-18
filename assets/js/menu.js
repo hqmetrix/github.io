@@ -52,6 +52,14 @@ window.HQ = {
         [
           "ma-drug-measures",
           "MA Drug Measures"
+        ],
+        [
+          "ccda-parser",
+          "CCDA Parser"
+        ],
+        [
+          "qrda-i-parser",
+          "QRDA I Parser"
         ]
       ]
     },
