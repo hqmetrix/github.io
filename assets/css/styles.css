@@ -42,7 +42,7 @@ h2{font-size:26px}h3{font-size:17px}h4{font-size:13px}
 
 /* hero */
 .hero{background:linear-gradient(135deg,#0A2060,#143a99);color:#fff;padding:56px 0}
-.hero.big{padding:92px 0;background-image:url(../img/hero-abstract.svg),linear-gradient(135deg,#0A2060,#143a99);background-repeat:no-repeat;background-position:right center,0 0;background-size:auto 100%,auto}@media(max-width:1599px){.hero.big{background-size:auto 72%,auto}}@media(max-width:1199px){.hero.big{background-image:linear-gradient(135deg,#0A2060,#143a99)}}
+.hero.big{padding:92px 0;background-image:url(../img/hero-abstract.svg),linear-gradient(135deg,#0A2060,#143a99);background-repeat:no-repeat;background-position:right center,0 0;background-size:auto 100%,auto}@media(max-width:1599px){.hero.big{background-position:calc(100% + 150px) center,0 0}}@media(max-width:1199px){.hero.big{background-image:linear-gradient(135deg,#0A2060,#143a99)}}
 .hero h1{color:#fff;font-size:clamp(26px,3.6vw,44px);max-width:880px}
 .hero.page h1{font-size:clamp(24px,3vw,36px)}
 .eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.1em;font-size:12px;font-weight:700;color:var(--sky);margin-bottom:12px}
