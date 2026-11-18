@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
-<defs><radialGradient id="g" cx=".85" cy=".4" r=".5"><stop offset="0" stop-color="#3b7be0" stop-opacity=".4"/><stop offset="1" stop-color="#3b7be0" stop-opacity="0"/></radialGradient><linearGradient id="m" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".38" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="k"><rect width="100%" height="100%" fill="url(#m)"/></mask></defs>
+<defs><radialGradient id="g" cx=".85" cy=".4" r=".5"><stop offset="0" stop-color="#3b7be0" stop-opacity=".4"/><stop offset="1" stop-color="#3b7be0" stop-opacity="0"/></radialGradient><linearGradient id="m" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".30" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="k"><rect width="100%" height="100%" fill="url(#m)"/></mask></defs>
 <rect width="1000" height="640" fill="url(#g)"/><g mask="url(#k)">
 <circle cx="675" cy="52" r="6.5" fill="#9CD0FF" opacity=".75"/>
 <circle cx="675" cy="104" r="6" fill="none" stroke="#bfe0ff" stroke-width="1.8" opacity=".95"/>
