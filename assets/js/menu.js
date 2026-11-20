@@ -138,6 +138,10 @@ window.HQ = {
       "dir": "about",
       "items": [
         [
+          "why-hqmetrix",
+          "Why hqMetrix"
+        ],
+        [
           "mission",
           "Mission"
         ],
