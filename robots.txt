@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hqmetrix.com/sitemap.xml
+Sitemap: https://hqmetrix.com/sitemap.xml
